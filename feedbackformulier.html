@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang=nl-BE>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulier sudado</title>
+</head>
+
+<body>
+    <header><!--Onderverdeling van de body-->
+        <h1>Sudado de pollo colombiano</h1>
+        <h3>Miguel Angel Marmolejo Correa</h3>
+
+        <a href=https://www.recetasnestle.com.co/recetas/sudado-de-pollo>
+            <figure><img alt="Sudadito" src="Media/sudado.jpg" title="Sudado Colombiano">
+                <figcaption>Sudado Colombiano</figcaption><!--Om de titel onder de foto te printen-->
+            </figure>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html#ingredienten">Ingredienten</a></li>
+                <li><a href="index.html#bereiding">Bereiding</a></li>
+                <li><a href=https://github.ugent.be/pages/mmarmole/website>Receta sudado de pollo</a></li>
+                <li><a href=https://github.ugent.be/pages/mmarmole/website>Feedback invullen</a></li>
+                <li><a href=https://migue3634.github.io/website>Hoe de lekkerste rijst ter wereld maken?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main><!--tweede deel van de body-->
+        <h1>Hoe vond je mijn colombiaanse recept?</h1>
+        <form action="https://formspree.io/f/xayrdqgo" method="POST">
+            <!--begin formularium, "post" omdat email-->
+            <fieldset><!--Eerst deel-->
+                <legend>Wie ben je?</legend><!--Titel v/d kader-->
+                <label for="naam">Naam:</label><!--eerst label voor naam-->
+                <input id="naam" name="naam" type="text" required><br> <!--de br om apart te printen-->
+
+                <select name="land" id="land">
+                    <option value="BE">België</option>
+                    <option value="CO">Colombia</option>
+                    <option value="FR">Frankrijk</option>
+                    <option value="NL">Nederland</option>
+                    <option value="ES">Spanje</option>
+                    <option value="SR">Surinam</option>
+
+                </select><br>
+
+                <label for="email">Email voor verdere comunicatie:</label>
+                <input name="email" id="email" type="email" size="40"><br>
+            </fieldset>
+
+            <fieldset><!--Tweede deel-->
+                <legend>Over het recept</legend><!--Titel v/d kader-->
+
+                Ga je mijn Sudado de pollo in het echt maken?
+                <input id="ja" name="recept maken" type="radio" value="Ja" checked>
+                <label for="ja">Ja zeker!</label>
+                <input id="nee" name="recept maken" type="radio" value="Nee">
+                <label for="nee">Nee</label>
+                <input id="mss" name="recept maken" type="radio" value="Mss">
+                <label for="mss">Misschien</label><br>
+
+                <br>Wat vond je de moelijkste stappen?
+                <label for="groentjes">Groentjes snijden</label>
+                <input id="groentjes" name="stappen" type="checkbox" value="groentjes">
+                <label for="hogao">Hogao maken(tomatensaus)</label>
+                <input id="hogao" name="stappen" type="checkbox" value="hogao">
+                <label for="rijst">Rijst maken</label>
+                <input id="rijst" name="stappen" type="checkbox" value="rijst">
+                <label for="koken">Het koken</label>
+                <input id="koken" name="stappen" type="checkbox" value="koken"><br>
+
+                <br><label for="ervaring">Hoe was jouw ervaring met de sudado de pollo? wat zou je veranderen?</label>
+                <textarea id="ervaring" name="ervaring" rows="4" cols="50"></textarea>
+            </fieldset>
+
+            <fieldset><!--Derde deel-->
+                <legend>Over Colombia</legend>
+                <label for="colombia">Heb je ooit iets over <mark>Colombia</mark> gehoord? Zo ja wat?</label>
+                <textarea id="colombia" name="ervaring" rows="6" cols="50" required
+                    placeholder="Bijvoorbeeld over Shakira of over onze koffie &#128527;"></textarea>
+            </fieldset>
+
+            <input type="reset" value="Alles weg">
+            <input type="submit" value="Stuur nu naar Miguel">
+        </form> <!--einde formularium-->
+    </main>
+
+
+    <footer>Miguel Angel Marmolejo Correa. Gepost op <time datetime="2024-03-17">17 maart 2024</time></footer>
+    <!--YYYY-MM-DD-->
+</body>
