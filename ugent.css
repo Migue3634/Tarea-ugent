@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(228, 180, 236);
+    font-family: "Comic Sans MS";
+}
+
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1,
+h2,
+h3 {
+    background-color: rgb(30, 100, 200);
+    font-family: Lucida Handwriting;
+    color: white;
+
+}
+
+h1:hover,
+/*Het moet in elke :hover , en er mag geen spatie zijn*/
+h2:hover,
+h3:hover {
+    background-color: rgb(255, 210, 0);
+    color: black;
+}
+
+header {
+    margin-left: 20%;
+    /*zodat het mooier eruit ziet */
+    margin-right: 20%;
+}
+
+mark {
+    color: white;
+    background-color: rgb(175, 45, 195);
+    text-decoration: underline;
+}
+
+table img {
+    /*Selector, enkel images in tables*/
+    height: 60px;
+}
+
+
+header figure {
+    /*De figuur is zowel de tekst als de image*/
+    float: right;
+}
+
+main {
+    clear: both
+}
+
+nav {
+    margin-top: 1.5cm;
+}
+
+header img {
+    height: 150px;
+    /*zodat het aan de rechterkant is*/
+    border-style: double;
+    border-width: 2.3mm;
+}
+
+.midden_img {
+    /*kan ook img.midden_img*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+th,
+td {
+    border: 3px solid rgb(57, 3, 68);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+
+section>p {
+    margin-top: -15px;
+}
+
+
+main>section>footer {
+    /*met de mailto*/
+    background-color: rgb(255, 210, 0);
+}
+
+
+.col-md-12>footer {
+    /*Als het enkel footer staat worden alle de footers gekozen!
+    nu moet ik verwijzen naar .col-md-12*/
+    margin-top: 35px;
+    font-variant: small-caps;
+
+}
+
+time {
+    float: right;
+}
+
+/*Nu aanpassen voor formulier*/
+fieldset {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(30, 100, 200);
+    margin-bottom: 30px;
+}
+
+legend {
+    color: rgb(30, 100, 200);
+}
+
+form {
+    /*Het gaat nog kleiner zijn want ik had al een marge*/
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+textarea {
+    width: 100%;
+    background-color: rgba(144, 15, 172, 0.393);
+}
+
+textarea:focus,
+/*Om kleurtje te veranderen van de getypte dingen*/
+input:focus {
+    color: #51ce59;
+}
